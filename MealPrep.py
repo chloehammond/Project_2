@@ -1,11 +1,17 @@
-def main():
+# link to original code: https://1drv.ms/u/s!AsWdPkm5WGVRhGfjytcNjRxjWno2
+
+
+def main() -> None:
+    """
+    Function to find what a person can make with the food they have
+    """
     print('Welcome to the meal prep program!')
     print("Let's see what you can make!")
 
     meat = input('Do you have any meat? ').lower().strip()
 
     if meat == 'y' or meat == 'yes':
-        meat_options = input('Do you have beef, chicken, or other meat? ').lower().strip()
+        meat_options = input('Do you have beef, chicken, tofu, or other meat? ').lower().strip()
         if meat_options == 'beef':
             beef_types = input('Do you have steak, ground, or roast? ').lower().strip()
             if beef_types == 'steak':
@@ -124,6 +130,26 @@ def main():
                         print('Just meat tonight!')
                     else:
                         print('Invalid response')
+                else:
+                    print('Invalid response')
+            else:
+                print('Invalid response')
+        elif meat_options == 'tofu':
+            vegetables = input('Do you have any vegetables? ').lower().strip()
+            if vegetables == 'y' or vegetables == 'yes':
+                print('You should make Tofu Stir Fry')
+            elif vegetables == 'n' or vegetables == 'no':
+                cheese = input('Do you have cheese? ').lower().strip()
+                if cheese == 'y' or cheese == 'yes':
+                    pasta = input('Do you have pasta? ').lower().strip()
+                    if pasta == 'y' or pasta == 'yes':
+                        print('You should make Spaghetti and Tofu Meatballs')
+                    elif pasta == 'n' or pasta == 'no':
+                        print('You should make a Tofu Charcuterie Board')
+                    else:
+                        print('Invalid Response')
+                elif cheese == 'n' or cheese == 'no':
+                    print('You should make Tofu Nuggets')
                 else:
                     print('Invalid response')
             else:
