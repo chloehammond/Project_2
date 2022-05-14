@@ -43,7 +43,7 @@ def main() -> None:
             elif beef_types == 'ground':
                 buns = input('Do you have any buns? ').lower().strip()
                 if buns == 'y' or buns == 'yes':
-                    print('You should make hamburgers')
+                    print('You should make Hamburgers')
                 elif buns == 'n' or 'no':
                     rice = input('Do you have any rice? ').lower().strip()
                     if rice == 'y' or rice == 'yes':
