@@ -2,20 +2,20 @@ def main():
     print('Welcome to the meal prep program!')
     print("Let's see what you can make!")
 
-    meat = input('Do you have any meat?').lower()
+    meat = input('Do you have any meat? ').lower().strip()
 
     if meat == 'y' or meat == 'yes':
-        meat_options = input('Do you have beef, chicken, or other meat?').lower()
+        meat_options = input('Do you have beef, chicken, or other meat? ').lower().strip()
         if meat_options == 'beef':
-            beef_types = input('Do you have steak, ground, or roast?').lower()
+            beef_types = input('Do you have steak, ground, or roast? ').lower().strip()
             if beef_types == 'steak':
-                potatoes = input('Do you have any potatoes?').lower()
+                potatoes = input('Do you have any potatoes? ').lower().strip()
                 if potatoes == 'y' or potatoes == 'yes':
-                    salad = input('Do you have any salad?').lower()
+                    salad = input('Do you have any salad? ').lower().strip()
                     if salad == 'y' or salad == 'yes':
                         print('You should make Steak, Baked Potatoes, and Salad.')
                     elif salad == 'n' or salad == 'no':
-                        fruit = input('Do you have any fruit?').lower()
+                        fruit = input('Do you have any fruit? ').lower().strip()
                         if fruit == 'y' or fruit == 'yes':
                             print('You should have Steak, Baked Potatoes, and Fruit.')
                         elif fruit == 'n' or fruit == 'no':
@@ -25,7 +25,7 @@ def main():
                     else:
                         print('Invalid response')
                 elif potatoes == 'n' or potatoes == 'no':
-                    salad = input('Do you have any salad?').lower()
+                    salad = input('Do you have any salad? ').lower().strip()
                     if salad == 'y' or salad == 'yes':
                         print('You should make Steak Salad.')
                     elif salad == 'n' or 'no':
@@ -35,11 +35,11 @@ def main():
                 else:
                     print('Invalid response')
             elif beef_types == 'ground':
-                buns = input('Do you have any buns?').lower()
+                buns = input('Do you have any buns? ').lower().strip()
                 if buns == 'y' or buns == 'yes':
                     print('You should make hamburgers')
                 elif buns == 'n' or 'no':
-                    rice = input('Do you have any rice?').lower()
+                    rice = input('Do you have any rice? ').lower().strip()
                     if rice == 'y' or rice == 'yes':
                         print('You should make a casserole')
                     elif rice == 'n' or rice == 'no':
@@ -49,9 +49,9 @@ def main():
                 else:
                     print('Invalid response')
             elif beef_types == 'roast':
-                potatoes = input('Do you have any potatoes?').lower()
+                potatoes = input('Do you have any potatoes? ').lower().strip()
                 if potatoes == 'y' or potatoes == 'yes':
-                    vegetables = input('Do you have any vegetables?').lower()
+                    vegetables = input('Do you have any vegetables? ').lower().strip()
                     if vegetables == 'y' or vegetables == 'yes':
                         print('You should make Pot Roast and veggies with Mashed Potatoes')
                     elif vegetables == 'n' or vegetables == 'no':
@@ -59,7 +59,7 @@ def main():
                     else:
                         print('Invalid response')
                 elif potatoes == 'n' or potatoes == 'no':
-                    vegetables = input('Do you have any vegetables?').lower()
+                    vegetables = input('Do you have any vegetables? ').lower().strip()
                     if vegetables == 'y' or vegetables == 'yes':
                         print('You should make Meat and Veggie Soup')
                     elif vegetables == 'n' or vegetables == 'no':
@@ -71,15 +71,15 @@ def main():
             else:
                 print('Invalid response')
         elif meat_options == 'chicken':
-            chicken_type = input('Is your chicken whole or pieces?').lower()
+            chicken_type = input('Is your chicken whole or pieces? ').lower().strip()
             if chicken_type == 'whole':
-                pasta = input('Do you have any pasta?').lower()
+                pasta = input('Do you have any pasta? ').lower().strip()
                 if pasta == 'y' or pasta == 'yes':
                     print('You should make Chicken Pasta Casserole')
                 elif pasta == 'n' or pasta == 'no':
-                    rice = input('Do you have any rice?').lower()
+                    rice = input('Do you have any rice? ').lower().strip()
                     if rice == 'y' or rice == 'yes':
-                        vegetables = input('Do you have any vegetables?').lower()
+                        vegetables = input('Do you have any vegetables? ').lower().strip()
                         if vegetables == 'y' or vegetables == 'yes':
                             print('You should make Stir Fry')
                         elif vegetables == 'n' or vegetables == 'no':
@@ -93,11 +93,11 @@ def main():
                 else:
                     print('Invalid response')
             elif chicken_type == 'pieces':
-                vegetables = input('Do you have any vegetables?').lower()
+                vegetables = input('Do you have any vegetables? ').lower().strip()
                 if vegetables == 'y' or vegetables == 'yes':
                     print('You should make Grilled Chicken and Veggies')
                 elif vegetables == 'n' or vegetables == 'no':
-                    pasta = input('Do you have any pasta?').lower()
+                    pasta = input('Do you have any pasta? ').lower().strip()
                     if pasta == 'y' or pasta == 'yes':
                         print('You should make Chicken Piccata')
                     elif pasta == 'n' or pasta == 'no':
@@ -109,15 +109,15 @@ def main():
             else:
                 print('Invalid response')
         elif meat_options == 'other meat':
-            eggs = input('Do you have any eggs?').lower()
+            eggs = input('Do you have any eggs? ').lower().strip()
             if eggs == 'y' or eggs == 'yes':
                 print('You should make Meat and Eggs')
             elif eggs == 'n' or eggs == 'no':
-                vegetables = input('Do you have any vegetables?').lower()
+                vegetables = input('Do you have any vegetables? ').lower().strip()
                 if vegetables == 'y' or vegetables == 'yes':
                     print('You should make Meat and Veggies')
                 elif vegetables == 'n' or vegetables == 'no':
-                    pasta = input('Do you have any pasta?').lower()
+                    pasta = input('Do you have any pasta? ').lower().strip()
                     if pasta == 'y' or pasta == 'yes':
                         print('You should make Meat and Pasta')
                     elif pasta == 'n' or pasta == 'no':
@@ -131,11 +131,11 @@ def main():
         else:
             print('Invalid response')
     elif meat == 'n' or meat == 'no':
-        vegetables = input('Do you have any vegetables?').lower()
+        vegetables = input('Do you have any vegetables? ').lower().strip()
         if vegetables == 'y' or vegetables == 'yes':
-            eggplant = input('Do you have any eggplants?').lower()
+            eggplant = input('Do you have any eggplants? ').lower().strip()
             if eggplant == 'y' or eggplant == 'yes':
-                tomatoes = input('Do you have any tomatoes?').lower()
+                tomatoes = input('Do you have any tomatoes? ').lower().strip()
                 if tomatoes == 'y' or tomatoes == 'yes':
                     print('You should make Eggplant Parmesan')
                 elif tomatoes == 'n' or tomatoes == 'no':
@@ -147,9 +147,9 @@ def main():
             else:
                 print('Invalid response')
         elif vegetables == 'n' or vegetables == 'no':
-            eggs = input('Do you have any eggs?').lower()
+            eggs = input('Do you have any eggs? ').lower().strip()
             if eggs == 'y' or eggs == 'yes':
-                onions_and_peppers = input('Do you have any onions and peppers?').lower()
+                onions_and_peppers = input('Do you have any onions and peppers? ').lower().strip()
                 if onions_and_peppers == 'y' or onions_and_peppers == 'yes':
                     print('You should make a Frittata')
                 elif onions_and_peppers == 'n' or onions_and_peppers == 'no':
@@ -157,7 +157,7 @@ def main():
                 else:
                     print('Invalid response')
             elif eggs == 'n' or eggs == 'no':
-                bread = input('Do you have any bread?').lower()
+                bread = input('Do you have any bread? ').lower().strip()
                 if bread == 'y' or bread == 'yes':
                     print('You should make a PB & J sandwich')
                 elif bread == 'n' or bread == 'no':
